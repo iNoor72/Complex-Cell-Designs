@@ -17,6 +17,9 @@
 		876726A22B93CAD0001BE913 /* TrivagoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 876726A02B93CAD0001BE913 /* TrivagoTableViewCell.xib */; };
 		876726A62B93CB41001BE913 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876726A52B93CB41001BE913 /* NetworkManager.swift */; };
 		876726A82B93CB4D001BE913 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876726A72B93CB4D001BE913 /* APIConstants.swift */; };
+		876D2B682B94F1EA001284BD /* TrivagoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876D2B672B94F1EA001284BD /* TrivagoModel.swift */; };
+		876D2B6A2B94F261001284BD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876D2B692B94F261001284BD /* Endpoint.swift */; };
+		876D2B6C2B94F2D4001284BD /* TrivagoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876D2B6B2B94F2D4001284BD /* TrivagoEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		876726A02B93CAD0001BE913 /* TrivagoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrivagoTableViewCell.xib; sourceTree = "<group>"; };
 		876726A52B93CB41001BE913 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		876726A72B93CB4D001BE913 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		876D2B672B94F1EA001284BD /* TrivagoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivagoModel.swift; sourceTree = "<group>"; };
+		876D2B692B94F261001284BD /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		876D2B6B2B94F2D4001284BD /* TrivagoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivagoEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +70,12 @@
 		876726882B93CA2F001BE913 /* Cell-Practicing */ = {
 			isa = PBXGroup;
 			children = (
+				876D2B6D2B94F3B6001284BD /* Core */,
+				876D2B662B94F1E3001284BD /* Models */,
 				876726A32B93CB30001BE913 /* Services */,
 				8767269D2B93CA84001BE913 /* Cells */,
-				876726892B93CA2F001BE913 /* AppDelegate.swift */,
-				8767268B2B93CA2F001BE913 /* SceneDelegate.swift */,
 				8767268D2B93CA2F001BE913 /* ViewController.swift */,
 				8767268F2B93CA2F001BE913 /* Main.storyboard */,
-				876726922B93CA30001BE913 /* Assets.xcassets */,
-				876726942B93CA30001BE913 /* LaunchScreen.storyboard */,
 				876726972B93CA30001BE913 /* Info.plist */,
 			);
 			path = "Cell-Practicing";
@@ -107,8 +111,29 @@
 			children = (
 				876726A52B93CB41001BE913 /* NetworkManager.swift */,
 				876726A72B93CB4D001BE913 /* APIConstants.swift */,
+				876D2B692B94F261001284BD /* Endpoint.swift */,
+				876D2B6B2B94F2D4001284BD /* TrivagoEndpoint.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		876D2B662B94F1E3001284BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				876D2B672B94F1EA001284BD /* TrivagoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		876D2B6D2B94F3B6001284BD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				876726942B93CA30001BE913 /* LaunchScreen.storyboard */,
+				876726922B93CA30001BE913 /* Assets.xcassets */,
+				876726892B93CA2F001BE913 /* AppDelegate.swift */,
+				8767268B2B93CA2F001BE913 /* SceneDelegate.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,11 +209,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				876726A12B93CAD0001BE913 /* TrivagoTableViewCell.swift in Sources */,
+				876D2B6C2B94F2D4001284BD /* TrivagoEndpoint.swift in Sources */,
 				8767268E2B93CA2F001BE913 /* ViewController.swift in Sources */,
+				876D2B6A2B94F261001284BD /* Endpoint.swift in Sources */,
 				876726A82B93CB4D001BE913 /* APIConstants.swift in Sources */,
 				876726A62B93CB41001BE913 /* NetworkManager.swift in Sources */,
 				8767268A2B93CA2F001BE913 /* AppDelegate.swift in Sources */,
 				8767268C2B93CA2F001BE913 /* SceneDelegate.swift in Sources */,
+				876D2B682B94F1EA001284BD /* TrivagoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

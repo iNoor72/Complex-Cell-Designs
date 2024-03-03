@@ -11,6 +11,6 @@ enum APIConstants {
     static let baseURL = "http://localhost:3000"
     
     enum Endpoints {
-        static let trivagoMockedData = "/trivago"
+        static let trivagoPath = "/trivago"
     }
 }
