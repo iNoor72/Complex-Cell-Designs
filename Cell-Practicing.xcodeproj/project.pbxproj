@@ -20,6 +20,12 @@
 		876D2B682B94F1EA001284BD /* TrivagoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876D2B672B94F1EA001284BD /* TrivagoModel.swift */; };
 		876D2B6A2B94F261001284BD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876D2B692B94F261001284BD /* Endpoint.swift */; };
 		876D2B6C2B94F2D4001284BD /* TrivagoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876D2B6B2B94F2D4001284BD /* TrivagoEndpoint.swift */; };
+		876D2B702B950213001284BD /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876D2B6F2B950213001284BD /* DatabaseManager.swift */; };
+		87E12B9F2B96496C00076296 /* CarRentalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E12B9E2B96496C00076296 /* CarRentalViewController.swift */; };
+		87E12BA32B964A1900076296 /* CarRentalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E12BA12B964A1900076296 /* CarRentalTableViewCell.swift */; };
+		87E12BA42B964A1900076296 /* CarRentalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E12BA22B964A1900076296 /* CarRentalTableViewCell.xib */; };
+		87E12BA72B964A4000076296 /* CarRentalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E12BA62B964A4000076296 /* CarRentalModel.swift */; };
+		87E12BAA2B964FEE00076296 /* CarRentalEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E12BA92B964FEE00076296 /* CarRentalEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		876D2B672B94F1EA001284BD /* TrivagoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivagoModel.swift; sourceTree = "<group>"; };
 		876D2B692B94F261001284BD /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		876D2B6B2B94F2D4001284BD /* TrivagoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivagoEndpoint.swift; sourceTree = "<group>"; };
+		876D2B6F2B950213001284BD /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		87E12B9E2B96496C00076296 /* CarRentalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRentalViewController.swift; sourceTree = "<group>"; };
+		87E12BA12B964A1900076296 /* CarRentalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRentalTableViewCell.swift; sourceTree = "<group>"; };
+		87E12BA22B964A1900076296 /* CarRentalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarRentalTableViewCell.xib; sourceTree = "<group>"; };
+		87E12BA62B964A4000076296 /* CarRentalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRentalModel.swift; sourceTree = "<group>"; };
+		87E12BA92B964FEE00076296 /* CarRentalEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRentalEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +86,7 @@
 				876D2B662B94F1E3001284BD /* Models */,
 				876726A32B93CB30001BE913 /* Services */,
 				8767269D2B93CA84001BE913 /* Cells */,
-				8767268D2B93CA2F001BE913 /* ViewController.swift */,
+				87E12B9D2B96495600076296 /* Views */,
 				8767268F2B93CA2F001BE913 /* Main.storyboard */,
 				876726972B93CA30001BE913 /* Info.plist */,
 			);
@@ -84,6 +96,7 @@
 		8767269D2B93CA84001BE913 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				87E12BA02B9649FD00076296 /* CarRental */,
 				8767269E2B93CA86001BE913 /* trivago */,
 			);
 			path = Cells;
@@ -101,6 +114,7 @@
 		876726A32B93CB30001BE913 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				876D2B6E2B95020B001284BD /* Database */,
 				876726A42B93CB3B001BE913 /* Network */,
 			);
 			path = Services;
@@ -109,10 +123,10 @@
 		876726A42B93CB3B001BE913 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				87E12BA82B964FDF00076296 /* Endpoints */,
 				876726A52B93CB41001BE913 /* NetworkManager.swift */,
 				876726A72B93CB4D001BE913 /* APIConstants.swift */,
 				876D2B692B94F261001284BD /* Endpoint.swift */,
-				876D2B6B2B94F2D4001284BD /* TrivagoEndpoint.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -121,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				876D2B672B94F1EA001284BD /* TrivagoModel.swift */,
+				87E12BA62B964A4000076296 /* CarRentalModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,6 +149,41 @@
 				8767268B2B93CA2F001BE913 /* SceneDelegate.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		876D2B6E2B95020B001284BD /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				876D2B6F2B950213001284BD /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		87E12B9D2B96495600076296 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8767268D2B93CA2F001BE913 /* ViewController.swift */,
+				87E12B9E2B96496C00076296 /* CarRentalViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		87E12BA02B9649FD00076296 /* CarRental */ = {
+			isa = PBXGroup;
+			children = (
+				87E12BA12B964A1900076296 /* CarRentalTableViewCell.swift */,
+				87E12BA22B964A1900076296 /* CarRentalTableViewCell.xib */,
+			);
+			path = CarRental;
+			sourceTree = "<group>";
+		};
+		87E12BA82B964FDF00076296 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				876D2B6B2B94F2D4001284BD /* TrivagoEndpoint.swift */,
+				87E12BA92B964FEE00076296 /* CarRentalEndpoint.swift */,
+			);
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +246,7 @@
 			files = (
 				876726A22B93CAD0001BE913 /* TrivagoTableViewCell.xib in Resources */,
 				876726962B93CA30001BE913 /* LaunchScreen.storyboard in Resources */,
+				87E12BA42B964A1900076296 /* CarRentalTableViewCell.xib in Resources */,
 				876726932B93CA30001BE913 /* Assets.xcassets in Resources */,
 				876726912B93CA2F001BE913 /* Main.storyboard in Resources */,
 			);
@@ -210,13 +261,18 @@
 			files = (
 				876726A12B93CAD0001BE913 /* TrivagoTableViewCell.swift in Sources */,
 				876D2B6C2B94F2D4001284BD /* TrivagoEndpoint.swift in Sources */,
+				876D2B702B950213001284BD /* DatabaseManager.swift in Sources */,
 				8767268E2B93CA2F001BE913 /* ViewController.swift in Sources */,
 				876D2B6A2B94F261001284BD /* Endpoint.swift in Sources */,
 				876726A82B93CB4D001BE913 /* APIConstants.swift in Sources */,
+				87E12BA32B964A1900076296 /* CarRentalTableViewCell.swift in Sources */,
+				87E12B9F2B96496C00076296 /* CarRentalViewController.swift in Sources */,
 				876726A62B93CB41001BE913 /* NetworkManager.swift in Sources */,
+				87E12BA72B964A4000076296 /* CarRentalModel.swift in Sources */,
 				8767268A2B93CA2F001BE913 /* AppDelegate.swift in Sources */,
 				8767268C2B93CA2F001BE913 /* SceneDelegate.swift in Sources */,
 				876D2B682B94F1EA001284BD /* TrivagoModel.swift in Sources */,
+				87E12BAA2B964FEE00076296 /* CarRentalEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,5 +12,6 @@ enum APIConstants {
     
     enum Endpoints {
         static let trivagoPath = "/trivago"
+        static let carsPath = "/cars"
     }
 }

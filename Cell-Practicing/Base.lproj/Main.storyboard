@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CUH-FK-0cF">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Trivago-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cell_Practicing" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NRf-1v-WUO">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -30,13 +30,81 @@
                             <constraint firstItem="NRf-1v-WUO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="u3K-z9-Fr0"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Trivago" id="hl6-aF-ZGg"/>
                     <connections>
                         <outlet property="cellTableView" destination="NRf-1v-WUO" id="hR6-0L-oUZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="4"/>
+            <point key="canvasLocation" x="-196" y="661"/>
+        </scene>
+        <!--DeliveryHero-->
+        <scene sceneID="2HJ-5y-Uph">
+            <objects>
+                <viewController id="6hR-8q-FVz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DVN-vf-Y26">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="t6W-us-Wwl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="DeliveryHero" id="wx4-H9-poe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XaN-WW-hJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="732" y="664"/>
+        </scene>
+        <!--Car Rental-->
+        <scene sceneID="Ga8-Rr-nCI">
+            <objects>
+                <viewController id="YVI-Qi-Su1" customClass="CarRentalViewController" customModule="Cell_Practicing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4sS-Pc-tCb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DmI-hT-a6v">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T7p-Up-7DL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T7p-Up-7DL" firstAttribute="trailing" secondItem="DmI-hT-a6v" secondAttribute="trailing" id="80N-WH-9fJ"/>
+                            <constraint firstItem="DmI-hT-a6v" firstAttribute="leading" secondItem="T7p-Up-7DL" secondAttribute="leading" id="9Dp-ly-ejR"/>
+                            <constraint firstItem="T7p-Up-7DL" firstAttribute="bottom" secondItem="DmI-hT-a6v" secondAttribute="bottom" id="Ihy-B0-mBD"/>
+                            <constraint firstItem="DmI-hT-a6v" firstAttribute="top" secondItem="T7p-Up-7DL" secondAttribute="top" id="Nrb-ga-Wi4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Car Rental" id="g1A-qW-dEE"/>
+                    <connections>
+                        <outlet property="tableView" destination="DmI-hT-a6v" id="qHl-fH-4sh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bqG-3T-kD8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689" y="663"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ehk-fC-RZQ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CUH-FK-0cF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RMN-l8-hMh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="efp-5r-w9e"/>
+                        <segue destination="YVI-Qi-Su1" kind="relationship" relationship="viewControllers" id="Yhp-oh-9dl"/>
+                        <segue destination="6hR-8q-FVz" kind="relationship" relationship="viewControllers" id="CKb-O9-7Wl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VLf-dX-6je" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059" y="-90"/>
         </scene>
     </scenes>
     <resources>
